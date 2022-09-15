@@ -1,0 +1,211 @@
+/*resetar pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*tirar pontos de lista*/
+ul {
+    list-style: none;
+}
+
+/* Fundo Esports */
+body {
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+/* formatação de fonte */
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+/*Alinhamento e ajuste da imagem do header*/
+header {
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD);
+
+    border-radius: 50%;
+
+    display: flex;
+    padding: 4px;
+
+    transition: transform .3s;
+}
+/*animação e movimentação da imagem do header*/
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+/* tamanho e posicionamento da tela*/
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+   
+    /*opcões do card*/
+    display: grid;
+    gap: 24px;
+
+   /* display: flex;
+    flex-direction: column;
+    gap: 24px; */
+
+}
+
+/* alteração de cores e formatos das bordas e da caixa*/
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+
+/*cores e formato do fundo das caixas*/
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+    
+}
+
+/*alteração de título(h2)*/
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+/*alteração de paragrafo(p)*/
+section p {
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+/*alteração de todas as caixas dentro da caixa ul*/
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+/* animação de todos os cards com pulsação*/
+
+section ul li {
+    transition: transfor .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+/* tamanho dos cards da primeira caixa li*/
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+/* tamanho e formato dos cards da segunda caixa li*/
+.channel-list img {
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54;
+}
+
+/* animação */
+
+header div {
+    animation: fromTop .7s .2s backwards;
+}
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+main section {
+    animation: FromTop .7s .2s backwards;
+}
+
+/* seleção dos filhos da section */
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: .3s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .6s;
+}
+
+main section:nth-child(4) {
+    animation-delay: .9s;
+}
+
+
+
+
+/* tipo e posição da animação do header*/
+
+@keyframes FromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* footer desiner*/
+
+
+section footer p {
+    color: #A1A1AA;
+    text-align: center;
+}
+section footer {
+     background-color: #2A2634;
+    padding: 10px;
+    padding-top: 1px;
+    border-radius: 8px;
+    
+}
+
+
